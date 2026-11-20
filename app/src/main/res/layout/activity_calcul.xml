@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/BarreTitre"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="@string/titre_forme" />
+
+    <!-- Zone des champs : prend toute la hauteur libre -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            android:id="@+id/imgForme"
+            android:contentDescription="@string/image_forme" />
+      <Space
+          android:layout_width="0dp"
+          android:layout_height="100dp"/>
+
+
+        <EditText
+            android:id="@+id/etValeur1"
+            style="@style/Champ"
+            android:autofillHints=""
+            />
+
+
+        <EditText
+            android:id="@+id/etValeur2"
+            style="@style/Champ"
+            android:autofillHints=""
+             />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalculer"
+        style="@style/BoutonCalcul"
+        android:text="@string/calculer" />
+</LinearLayout>

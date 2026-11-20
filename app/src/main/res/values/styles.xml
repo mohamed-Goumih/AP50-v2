@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Barre de titre indigo, texte et flèche en blanc -->
+    <style name="BarreTitre">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/primaire</item>
+        <item name="titleTextColor">#FFFFFF</item>
+        <item name="navigationIconTint">#FFFFFF</item>
+    </style>
+
+    <!-- Titre de section : CHOISIR UNE FORME, HISTORIQUE -->
+    <style name="TitreSection">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/texte_gris</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <!-- Carte de forme de l'écran principal -->
+    <style name="CarteForme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">#FFFFFF</item>
+        <item name="strokeColor">@color/bordure</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Icône ronde d'une carte -->
+    <style name="IconeForme">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:background">@drawable/bg_rond</item>
+    </style>
+
+    <!-- Nom de la forme sous l'icône -->
+    <style name="NomForme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/texte</item>
+    </style>
+
+    <!-- Grande icône en haut des écrans de calcul -->
+    <style name="IconeCalcul">
+        <item name="android:layout_width">96dp</item>
+        <item name="android:layout_height">96dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:padding">26dp</item>
+        <item name="android:background">@drawable/bg_rond</item>
+        <item name="android:backgroundTint">@color/primaire_clair</item>
+        <item name="tint">@color/primaire</item>
+    </style>
+
+    <!-- Libellé au-dessus d'un champ -->
+    <style name="Libelle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/texte</item>
+    </style>
+
+    <!-- Champ de saisie numérique -->
+    <style name="Champ">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:paddingHorizontal">14dp</item>
+        <item name="android:background">@drawable/bg_champ</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Bouton du bas des écrans de calcul -->
+    <style name="BoutonCalcul">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+</resources>

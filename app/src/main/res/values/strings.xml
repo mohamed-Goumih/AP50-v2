@@ -1,0 +1,34 @@
+<resources>
+    <string name="titre_accueil">Géométrie</string>
+    <string name="choisir_forme">CHOISIR UNE FORME</string>
+    <string name="historique">HISTORIQUE</string>
+    <string name="effacer">Effacer</string>
+    <string name="aucun_calcul">Aucun calcul pour le moment</string>
+    <string name="surface">Surface</string>
+    <string name="calculer">Calculer la surface</string>
+    <string name="err_valeur">Saisir un nombre supérieur à 0</string>
+
+    <string name="carre">Carré</string>
+    <string name="rectangle">Rectangle</string>
+    <string name="cercle">Cercle</string>
+    <string name="triangle">Triangle</string>
+
+    <string name="titre_carre">Calcul : Carré</string>
+    <string name="titre_forme">Calcul : Surface</string>
+    <string name="titre_rectangle">Calcul : Rectangle</string>
+    <string name="titre_cercle">Calcul : Cercle</string>
+    <string name="titre_triangle">Calcul : Triangle</string>
+
+    <string name="label_cote">Côté (c)</string>
+    <string name="label_longueur">Longueur (L)</string>
+    <string name="label_largeur">Largeur (l)</string>
+    <string name="label_rayon">Rayon (r)</string>
+    <string name="label_base">Base (b)</string>
+    <string name="label_hauteur">Hauteur (h)</string>
+    <string name="app_name">ap50-v2</string>
+    <string name="image_forme">Image forme</string>
+
+    <!--    //erreur valeur-->
+
+
+</resources>

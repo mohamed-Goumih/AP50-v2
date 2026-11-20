@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/BarreTitre"
+        app:logo="@drawable/ic_grid"
+        app:titleMarginStart="20dp"
+        app:title="@string/titre_accueil" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/TitreSection"
+                android:layout_margin="6dp"
+                android:text="@string/choisir_forme" />
+
+            <!-- Grille 2 x 2 des formes -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardCarre"
+                    style="@style/CarteForme">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+                        <ImageView
+                            style="@style/IconeForme"
+                            android:backgroundTint="@color/bleu_clair"
+                            android:contentDescription="@string/carre"
+                            android:src="@drawable/ic_carre"
+                            app:tint="@color/bleu" />
+                        <TextView
+                            style="@style/NomForme"
+                            android:text="@string/carre" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardRectangle"
+                    style="@style/CarteForme">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+                        <ImageView
+                            style="@style/IconeForme"
+                            android:backgroundTint="@color/vert_clair"
+                            android:contentDescription="@string/rectangle"
+                            android:src="@drawable/ic_rectangle"
+                            app:tint="@color/vert" />
+                        <TextView
+                            style="@style/NomForme"
+                            android:text="@string/rectangle" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardCercle"
+                    style="@style/CarteForme">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+                        <ImageView
+                            style="@style/IconeForme"
+                            android:backgroundTint="@color/violet_clair"
+                            android:contentDescription="@string/cercle"
+                            android:src="@drawable/ic_cercle"
+                            app:tint="@color/violet" />
+                        <TextView
+                            style="@style/NomForme"
+                            android:text="@string/cercle" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardTriangle"
+                    style="@style/CarteForme">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+                        <ImageView
+                            style="@style/IconeForme"
+                            android:backgroundTint="@color/orange_clair"
+                            android:contentDescription="@string/triangle"
+                            android:src="@drawable/ic_triangle"
+                            app:tint="@color/orange" />
+                        <TextView
+                            style="@style/NomForme"
+                            android:text="@string/triangle" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </GridLayout>
+
+            <!-- En-tête de l'historique : titre + Effacer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="6dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TitreSection"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/historique" />
+
+                <Button
+                    android:id="@+id/btnEffacer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawableStart="@drawable/ic_delete"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:padding="6dp"
+                    android:text="@string/effacer"
+                    android:textColor="@color/rouge"
+                    app:drawableTint="@color/rouge" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvVide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="24dp"
+                android:textColor="@color/texte_gris" />
+
+            <!-- Lignes d'historique ajoutées par le code -->
+            <LinearLayout
+                android:id="@+id/conteneurHistorique"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
